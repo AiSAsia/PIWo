@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarium Aureum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="menu">
+            <img id="logo" src="image.png" alt="Logo księgarni">
+            <a href="#">Strona główna</a>
+            <a href="#">O nas</a>
+            <a href="#">Kontakt</a>
+        </div>
+        <div class="actions">
+            <input type="text" placeholder="Szukaj...">
+            <button>Zaloguj</button>
+            <button>Koszyk</button>
+            <a href="index2.html"><button>Dodaj pozycję</button></a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="filters"> <!-- Dodać indentyfikacje do pobierania do kodu filtrowania oraz dodanie zakresów dla opcji -->
+            <h2>Filtry</h2>
+            <label for="price-min">Cena (zł):</label>
+            <div class="price-range">
+            <input type="number" id="price-min" placeholder="Min" min="0">
+            <span>–</span>
+            <input type="number" id="price-max" placeholder="Max" min="0">
+        </div>
+
+            <label>Okładka:</label>
+            <select>
+                <option>Wszystkie</option>
+                <option>Miękka</option>
+                <option>Twarda</option>
+            </select>
+            
+            <label for="pages-min">Ilość stron:</label>
+            <div class="page-range">
+                <input type="number" id="pages-min" placeholder="Min" min="0">
+                <span>–</span>
+                <input type="number" id="pages-max" placeholder="Max" min="0">
+            </div>
+            
+            
+            <label>Autor:</label>
+            <input type="text">
+            
+            <label>Opis zawiera:</label>
+            <input type="text">
+        </section>
+
+        <section class="book-list">
+            <h2>Lista książek</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://placehold.co/220x275/orange/white" alt="Okładka książki">
+                    </div>
+                    <div class="book-details">
+                        <h3>"Pan Tadeusz"</h3>
+                        <p>Adam Mickiewicz</p>
+                        <p>Cena: 45 zł</p>
+                        <p>Okładka: Twarda</p>
+                        <p>Opis: Historia o głównym bohaterze</p>
+                        <button>Dodaj do koszyka</button>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <div class="book-image">
+                        <img src="https://placehold.co/220x275/orange/white" alt="Okładka książki">
+                    </div>
+                    <div class="book-details">
+                        <h3>"Lalka"</h3>
+                        <p>Bolesław Prus</p>
+                        <p>Cena: 55 zł</p>
+                        <p>Okładka: Miękka</p>
+                        <p>Opis: Historia o głównym bohaterze</p>
+                        <button>Dodaj do koszyka</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Joanna Kuc</p>
+    </footer>
+</body>
+</html>

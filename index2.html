@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj książkę - Librarium Aureum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="menu">
+            <a href="index.html">Strona główna</a>
+            <a href="#">O nas</a>
+            <a href="#">Kontakt</a>
+        </div>
+        <div class="actions">
+            <input type="text" placeholder="Szukaj...">
+            <button>Zaloguj</button>
+            <button>Koszyk</button>
+            <a href="index2.html"><button>Dodaj pozycję</button></a>
+    </header>
+
+    <main class="main-content">
+        <section class="add-form">
+            <h2>Dodaj nową książkę</h2>
+            <form>
+                <label>Tytuł:</label>
+                <input type="text" required>
+
+                <label>Autor:</label>
+                <input type="text" required>
+
+                <label>Cena:</label>
+                <input type="number" required>
+
+                <label>Ilość stron:</label>
+                <input type="number">
+
+                <label>Okładka:</label>
+                <select>
+                    <option>Miękka</option>
+                    <option>Twarda</option>
+                </select>
+
+                <label>Opis:</label>
+                <textarea rows="4"></textarea>
+
+                <button type="submit">Dodaj książkę</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Joanna Kuc</p>
+    </footer>
+</body>
+</html>
