@@ -4,6 +4,10 @@ export default function BookList({ query }) {
   const { filterBooks } = useBooks();
   const filtered = filterBooks(query);
 
+  if (filtered.length === 0) {
+    return <p>Brak wyników dla: "{query}"</p>;
+  }
+
   return (
     <div>
       <h2>Lista książek</h2>

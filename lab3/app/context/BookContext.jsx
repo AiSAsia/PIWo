@@ -6,6 +6,7 @@ export const BookProvider = ({ children }) => {
   const [books, setBooks] = useState([
     { id: 1, title: "Wiedźmin", author: "Andrzej Sapkowski" },
     { id: 2, title: "Lalka", author: "Bolesław Prus" },
+    { id: 3, title: "Quo Vadis", author: "Henryk Sienkiewicz" }
   ]);
 
   const addBook = (book) => {
@@ -13,10 +14,12 @@ export const BookProvider = ({ children }) => {
   };
 
   const filterBooks = (query) => {
+    const q = (query || "").toLowerCase().trim();
+    if (!q) return books;
     return books.filter(
       (book) =>
-        book.title.toLowerCase().includes(query.toLowerCase()) ||
-        book.author.toLowerCase().includes(query.toLowerCase())
+        book.title.toLowerCase().includes(q) ||
+        book.author.toLowerCase().includes(q)
     );
   };
 

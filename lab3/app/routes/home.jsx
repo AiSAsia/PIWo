@@ -9,9 +9,13 @@ export default function Home() {
       <h1>Wyszukiwarka książek</h1>
       <input
         type="text"
-        placeholder="Szukaj..."
+        placeholder="Szukaj po tytule lub autorze..."
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
+        autoFocus
+        style={{ marginBottom: "1rem", padding: "0.5rem", width: "100%" }}
       />
       <BookList query={query} />
     </div>

@@ -8,4 +8,3 @@ export default [
     file: "./routes/new.jsx"
   }
 ];
-
