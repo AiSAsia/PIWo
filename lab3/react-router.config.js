@@ -1,5 +1,6 @@
-import routes from "./app/routes.jsx";
-
 export default {
-  routes,
+  // Config options...
+  // Server-side render by default, to enable SPA mode set this to `false`
+  ssr: false,
+  prerender: false
 };
